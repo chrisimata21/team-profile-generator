@@ -43,11 +43,22 @@ function managerInput() {
   return inquirer.prompt(promptArr);
 }
 
-function employeeInput() {
+function engineerInput() {
   const promptArr = [
     {
       name: "github",
       message: "What is your GitHub?",
+      type: "input",
+    },
+  ];
+  return inquirer.prompt(promptArr);
+}
+
+function internInput() {
+  const promptArr = [
+    {
+      name: "school",
+      message: "What school did you go to?",
       type: "input",
     },
   ];
