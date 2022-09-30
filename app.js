@@ -64,3 +64,21 @@ function internInput() {
   ];
   return inquirer.prompt(promptArr);
 }
+
+async function start() {
+  let employeeArr = [];
+  const maxTimes = 4;
+  for (i = 0; i < maxTimes; i++) {
+    const promise = new Promise((resolve, reject) => {
+      userInput().then(function ({ name, id, email, title }) {
+        if (title === "Manager") {
+          managerInput().then(function ({ officeNumber }) {
+            this.Employee = new Manager(name, id, email, officeNumber, title);
+            employeeArr.push(Employee);
+            resolve("done");
+          });
+        }
+      });
+    });
+  }
+}
