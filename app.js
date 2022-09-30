@@ -42,3 +42,14 @@ function managerInput() {
   ];
   return inquirer.prompt(promptArr);
 }
+
+function employeeInput() {
+  const promptArr = [
+    {
+      name: "github",
+      message: "What is your GitHub?",
+      type: "input",
+    },
+  ];
+  return inquirer.prompt(promptArr);
+}
