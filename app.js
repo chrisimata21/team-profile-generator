@@ -77,6 +77,12 @@ async function start() {
             employeeArr.push(Employee);
             resolve("done");
           });
+        } else if (title === Engineer) {
+          engineerInput().then(function ({ github }) {
+            this.employee = new Engineer(name, id, email, github, title);
+            employeeArr.push(employee);
+            resolve("done");
+          });
         }
       });
     });
