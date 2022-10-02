@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const Engineer = require("./lib/engineer");
-const Employee = require("./lib/employee");
+const Employee = require("./lib/employee").default;
 const Manager = require("./lib/manager");
 const Intern = require("./lib/intern");
 
