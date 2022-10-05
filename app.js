@@ -119,7 +119,7 @@ async function start() {
       console.log(employeeArr[i]);
       html += `<div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
         <div class="col card-header">
-            <h4>${employeeArray[j].name}</h4>
+            <h4>${employeeArr[i].name}</h4>
         </div>
         <div class="col card-header">
             <h4>${employeeArray[j].title}</h4 >
